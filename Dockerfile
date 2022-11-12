@@ -1,8 +1,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get update && apt-get install -y \
-    clang-format \
-    git
+    clang-format
 
 COPY LICENSE README.md /
 
