@@ -1,7 +1,8 @@
 FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y \
-    clang-format
+    clang-format \
+    git
 
 COPY LICENSE README.md /
 
