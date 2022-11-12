@@ -17,8 +17,6 @@ jobs:
     name: clang-format Code Formatter
     runs-on: ubuntu-latest
     steps:
-    - name: Clang Code Formatter
-      uses: antoinealb/clang-format-action@clang9
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Clang Code Formatter
+        uses: vstumpf/ra-clang-format-action@master
 ```
