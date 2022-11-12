@@ -17,6 +17,6 @@ SRC=$(git ls-tree -r HEAD src | grep -e "\.\(c\|h\|hpp\|cpp\)\$" | cut -f 2)
 clang-format -style=file -i $SRC
 
 echo "## Commiting files..."
-git commit -a -m "apply clang-format" || true
+git commit -a -m "[no ci] apply clang-format" || true
 
 git push
