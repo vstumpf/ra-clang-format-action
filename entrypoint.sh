@@ -21,4 +21,4 @@ clang-format -style=file -i $SRC
 echo "## Commiting files..."
 git commit -a -m "[no ci] apply clang-format" || true
 
-git push
+git push origin HEAD:$GITHUB_HEAD_REF
