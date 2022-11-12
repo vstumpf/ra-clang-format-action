@@ -2,8 +2,8 @@
 
 set -eu
 
-# echo "## Marking pwd as safe"
-# git config --global --add safe.directory "$PWD"
+echo "## Marking pwd as safe"
+git config --global --add safe.directory "$PWD"
 
 echo "## Configuring git author..."
 git config --global user.email "clang-format@rathena.com"
